@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_pages",
+  "info": {
+    "name": "Main page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SectionOne": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.first-section"
+    }
+  }
+}

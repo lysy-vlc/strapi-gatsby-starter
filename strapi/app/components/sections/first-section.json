@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_first_sections",
+  "info": {
+    "name": "First section",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "richtext"
+    },
+    "Quote": {
+      "type": "text"
+    }
+  }
+}
