@@ -6,7 +6,7 @@ module.exports = {
   plugins: ["gatsby-plugin-postcss", {
     resolve: 'gatsby-plugin-google-analytics',
     options: {
-      "trackingId": ""
+      "trackingId": "lll"
     }
   }, "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
@@ -22,3 +22,7 @@ module.exports = {
     __key: "images"
   }]
 };
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
