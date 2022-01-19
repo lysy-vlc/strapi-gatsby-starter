@@ -11,23 +11,31 @@ const pageStyles = {
 
 // markup
 const IndexPage = () => {
-  const [ pageData, setPageData ] = useState(null)
+  const [ pageData, setPageData ] = useState({
+    SectionOne: {
+      Quote: ''
+    }
+  })
 
   useEffect(async () => {
     try {
-      const data = await axios.get(`${process.env.API_URL}/main-page`)
+      const { data } = await axios.get(`${process.env.API_URL}/main-page`)
+
+      console.log(data)
 
       setPageData(data)
     } catch (e) {
       console.error('Main page api req error: ', e)
     }
-  })
+
+    return
+  }, [])
 
   return (
     <main style={pageStyles}>
       <title>Jedisignals</title>
       <h1>Jedisignals</h1>
-      <div>{JSON.stringify(pageData, null, 2)}</div>
+      <div>{pageData.SectionOne.Quote}</div>
     </main>
   )
 }
