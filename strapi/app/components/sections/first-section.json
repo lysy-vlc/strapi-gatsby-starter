@@ -1,8 +1,9 @@
 {
   "collectionName": "components_sections_first_sections",
   "info": {
-    "name": "First section",
-    "icon": "ad"
+    "name": "header and quote",
+    "icon": "ad",
+    "description": ""
   },
   "options": {},
   "attributes": {
