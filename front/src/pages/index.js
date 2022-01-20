@@ -21,8 +21,6 @@ const IndexPage = () => {
     try {
       const { data } = await axios.get(`${process.env.API_URL}/main-page`)
 
-      console.log(data)
-
       setPageData(data)
     } catch (e) {
       console.error('Main page api req error: ', e)
