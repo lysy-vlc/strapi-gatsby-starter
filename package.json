@@ -4,7 +4,8 @@
   "description": "Strapi + gatsby",
   "main": "index.js",
   "scripts": {
-    "dev": "docker-compose -f ./strapi/docker-compose-dev.yml up"
+    "dev": "docker-compose -f ./strapi/docker-compose-dev.yml up",
+    "dev:down": "docker-compose -f ./strapi/docker-compose-dev.yml down"
   },
   "repository": {
     "type": "git",
