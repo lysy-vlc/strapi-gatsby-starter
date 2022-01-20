@@ -1,0 +1,19 @@
+{
+  "name": "jedisignals",
+  "version": "1.0.0",
+  "description": "Strapi + gatsby",
+  "main": "index.js",
+  "scripts": {
+    "dev": "docker-compose -f ./strapi/docker-compose-dev.yml up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lysy-vlc/strapi-gatsby-starter.git"
+  },
+  "author": "Kamil Grzaba (lysy_vlc)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lysy-vlc/strapi-gatsby-starter/issues"
+  },
+  "homepage": "https://github.com/lysy-vlc/strapi-gatsby-starter#readme"
+}
